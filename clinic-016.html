@@ -1,0 +1,300 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#E8EAE6"><meta name="description" content="نموذج تصميم مقترح لموقع عيادات الأسنان الدولية لطب وتقويم الأسنان في جدة — أُعدّ للعرض على العيادة."><meta property="og:type" content="website"><meta property="og:locale" content="ar_SA"><meta property="og:title" content="عيادات الأسنان الدولية لطب وتقويم الأسنان — نموذج تصميم مقترح"><meta property="og:description" content="نموذج تصميم مقترح لموقع عيادات الأسنان الدولية لطب وتقويم الأسنان في جدة — أُعدّ للعرض على العيادة."><style>html{-webkit-text-size-adjust:100%}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>عيادات الأسنان الدولية لطب وتقويم الأسنان — نموذج تصميم مقترح</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Alexandria:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* Clinical editorial: paper ground, hairline rules, sharp corners, one pine accent; 3D archwire as the hero instrument. */
+:root{
+  --paper:#FBFBF9; --stone:#E8EAE6; --ink:#11161A; --steel:#7D8893;
+  --pine:#3E5C50; --rule:rgba(17,22,26,.16);
+  --d:'Almarai',system-ui,sans-serif; --b:'Alexandria',system-ui,sans-serif;
+  --s1:8px; --s2:16px; --s3:24px; --s4:40px; --s5:64px; --s6:100px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--b);font-weight:300;
+  font-size:16px;line-height:1.85;direction:rtl;text-align:right;letter-spacing:normal}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--stone)}
+.pad{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.w{max-width:1020px;margin:0 auto}
+h1,h2,h3{margin:0;font-family:var(--d);font-weight:700;letter-spacing:normal;line-height:1.42;text-wrap:balance}
+a{color:inherit;text-decoration:none}
+.num{font-family:var(--b);font-variant-numeric:tabular-nums;unicode-bidi:plaintext}
+
+.top{position:fixed;top:env(safe-area-inset-top,0px);inset-inline:0;z-index:50}
+.ribbon{background:var(--stone);color:#4A5257;font-size:12px;font-weight:400;padding:7px 16px;text-align:center;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.5;border-bottom:1px solid var(--rule)}
+@media(max-width:480px){.ribbon{white-space:normal;font-size:11.5px;padding:6px 14px}}
+nav{background:rgba(251,251,249,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+nav .in{display:flex;align-items:center;gap:var(--s3);padding-block:11px}
+.mark b{display:block;font-family:var(--d);font-size:18px;font-weight:700;line-height:1.25}
+.mark span{display:block;font-size:10.5px;color:var(--pine);letter-spacing:normal}
+.nlinks{display:flex;gap:var(--s3);margin-inline-end:auto;font-size:14px;color:var(--steel)}
+.cta{border:1px solid var(--ink);padding:13px 22px;font-size:13.5px;font-weight:600;border-radius:4px}
+@media(max-width:820px){.nlinks{display:none}}
+
+header{padding-block:clamp(118px,23vh,172px) var(--s5);border-bottom:1px solid var(--rule)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s4);align-items:center}
+.eye{font-size:12.5px;font-weight:600;color:var(--pine);letter-spacing:normal}
+h1{font-size:clamp(30px,4.6vw,52px);margin-block:var(--s2) var(--s2)}
+.lead{color:#49535B;max-width:46ch}
+.btns{display:flex;gap:var(--s1);flex-wrap:wrap;margin-top:var(--s3)}
+.b1{background:var(--pine);color:#fff;padding:14px 26px;font-weight:600;border-radius:4px;font-size:15px}
+.b2{border:1px solid var(--rule);padding:14px 26px;font-weight:400;border-radius:4px;font-size:15px}
+.spec{margin-top:var(--s4);border-top:1px solid var(--ink)}
+.spec div{display:flex;justify-content:space-between;gap:var(--s2);padding-block:11px;
+  border-bottom:1px solid var(--rule);font-size:14px}
+.spec dt{color:var(--steel)}
+.spec b{font-weight:600}
+.stage{position:relative;aspect-ratio:1/1;width:100%;max-width:420px;margin-inline:auto;
+  background:linear-gradient(160deg,#FFFFFF,#E8EAE6 70%,#D9DEDA)}
+.stage canvas{position:relative;z-index:1;width:100%;height:100%;display:block}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.stage{max-width:300px}}
+
+section{padding-block:var(--s6)}
+h2{font-size:clamp(25px,3.3vw,36px);margin-block:var(--s1) var(--s2)}
+.sub{color:#49535B;max-width:54ch}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:var(--s4);border-top:1px solid var(--ink)}
+.cell{padding:var(--s3) var(--s3) var(--s3) 0;border-bottom:1px solid var(--rule);
+  border-inline-start:1px solid var(--rule)}
+.cell:nth-child(3n+1){border-inline-start:0;padding-inline-start:0}
+.cell:not(:nth-child(3n+1)){padding-inline-start:var(--s3)}
+@media(max-width:820px){.grid{grid-template-columns:1fr}.cell{border-inline-start:0;padding-inline:0}}
+.cell .ic{color:var(--pine);display:block;margin-bottom:var(--s2)}
+.cell h3{font-size:20px;margin-bottom:6px}
+.cell p{margin:0;font-size:15px;color:#49535B}
+.cell b.n{font-family:var(--b);font-size:11.5px;font-weight:600;color:var(--pine);letter-spacing:normal;display:block;margin-bottom:var(--s1)}
+.band{background:var(--stone);border-block:1px solid var(--rule)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);margin-top:var(--s4)}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.row{padding-block:var(--s2);border-bottom:1px solid var(--rule)}
+.row small{display:block;font-size:12.5px;color:var(--steel)}
+.row b{font-weight:600;unicode-bidi:plaintext}
+.notes{display:flex;flex-direction:column;gap:var(--s1);margin-top:var(--s3);font-size:13.5px;color:var(--steel)}
+.notes span{border-inline-start:2px solid var(--pine);padding-inline-start:12px}
+form{border:1px solid var(--ink);padding:var(--s3);background:#fff}
+label{display:block;font-size:12.5px;color:var(--steel);margin-block:var(--s2) 6px}
+input,select{width:100%;padding:13px 14px;font-size:16px;font-family:inherit;border:1px solid var(--rule);
+  border-radius:4px;background:var(--paper);color:var(--ink)}
+input:focus,select:focus{outline:2px solid var(--pine);outline-offset:-1px}
+form button{width:100%;margin-top:var(--s3);background:var(--ink);color:var(--paper);border:0;border-radius:4px;
+  padding:15px;font-size:15.5px;font-weight:600;font-family:inherit;cursor:pointer}
+footer{background:var(--ink);color:#A9B2B9;padding-block:var(--s4)}
+footer .w{display:flex;gap:var(--s3);flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer b{color:var(--paper)}
+footer a.ask{border:1px solid rgba(251,251,249,.32);padding:11px 20px;font-size:13.5px;color:var(--paper);border-radius:4px}
+.sticky{position:fixed;inset-block-end:0;inset-inline:0;z-index:40;display:none;gap:1px;background:var(--rule);
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+.sticky a{flex:1;text-align:center;background:var(--paper);padding:14px 6px;font-size:14px;font-weight:600}
+.sticky a.p{background:var(--pine);color:#fff}
+@media(max-width:820px){.sticky{display:flex}body{padding-bottom:62px}}
+*:focus-visible{outline:2px solid var(--pine);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* --- upgrade pass: ui-ux-pro-max priorities 1,2,7,8 --- */
+a,button,select,input,summary{touch-action:manipulation}
+.b1:active,.b2:active,.cta:active,.navcta:active,form button:active,.sticky a:active,.ask:active{transform:scale(.97)}
+.card:active,.cell:active{transform:scale(.995)}
+.skip{background:var(--ink);color:var(--paper);position:absolute;inset-inline-start:-9999px;top:0;z-index:100;padding:13px 20px;font-weight:600}
+.skip:focus{inset-inline-start:0}
+.rv{transition:opacity .5s ease-out,transform .5s ease-out}
+.rv.pre{opacity:.001;transform:translateY(16px)}
+.fb{margin-top:14px;font-size:13.5px;line-height:1.7;display:none}
+.fb.on{display:block}
+@media(prefers-reduced-motion:reduce){.rv,.rv.pre{opacity:1!important;transform:none!important}}
+</style>
+
+<a class="skip" href="#main">تجاوز إلى المحتوى الرئيسي</a>
+<div class="top">
+  <div class="ribbon">نموذج تصميم مقترح — ليس الموقع الرسمي للعيادة · بواسطة رامي الشيخي</div>
+  <nav class="pad"><div class="w in">
+    <div class="mark"><b>الأسنان الدولية</b><span>أخصائي تقويم أسنان</span></div>
+    <div class="nlinks"><a href="#svc">التقويم</a><a href="#plan">المسار</a><a href="#ct">حجز</a></div>
+    <a class="cta" href="#ct">استشارة تقويم</a>
+  </div></nav>
+</div>
+
+<header id="main" class="pad"><div class="w hero">
+  <div>
+    <p class="eye">تقويم الأسنان · جدة</p>
+    <h1>التقويم يبدأ بتصنيف العضة</h1>
+    <p class="lead">عيادات الأسنان الدولية لطب وتقويم الأسنان — عيادة متخصصة في تقويم الأسنان والفكين. نقيس الاصطفاف والإطباق على أشعة بانورامية وسيفالومترية، ونبني منها مساراً بمدة معلومة قبل تركيب أي جهاز.</p>
+    <div class="btns"><a class="b1" href="#ct">احجز استشارة قياس</a><a class="b2" href="#svc">أنواع التقويم</a></div>
+    <div class="spec">
+      <div><dt>التقييم على خرائط Google</dt><b class="num">4.4 — 109 مراجعة</b></div>
+      <div><dt>التخصص</dt><b>تقويم الأسنان والفكين</b></div>
+      <div><dt>الموقع</dt><b>شارع باخشب</b></div>
+      <div><dt>مدة المسار المعتادة</dt><b>تُحدَّد بعد القياس</b></div>
+    </div>
+  </div>
+  <div class="stage"><canvas id="cv" aria-hidden="true"></canvas></div>
+</div></header>
+
+<section id="svc" class="pad"><div class="w">
+  <p class="eye">أنواع التقويم</p>
+  <h2>ثلاثة مسارات، واحد يناسب حالتك</h2>
+  <p class="sub">الفرق بينها ليس في النتيجة فقط، بل في المدة والمتابعة والتكلفة. نشرح لك الثلاثة ونوصي بواحد مع السبب.</p>
+  <div class="grid">
+    <div class="cell"><b class="n">01</b>
+      <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 9c3.4 4.6 14.2 4.6 18 0"/><path d="M3 9c3.4 7.4 14.2 7.4 18 0" opacity=".45"/><rect x="6" y="9.6" width="2.6" height="2.6" rx=".5"/><rect x="10.7" y="11.4" width="2.6" height="2.6" rx=".5"/><rect x="15.4" y="9.6" width="2.6" height="2.6" rx=".5"/></svg>
+      <h3>التقويم الشفاف</h3><p>قوالب متتابعة تُستبدل كل أسبوع إلى أسبوعين حسب الخطة، تُخلع للأكل والتنظيف، وتحتاج التزاماً بـ22 ساعة لبس يومياً حتى تتحرّك الأسنان في وقتها.</p></div>
+    <div class="cell"><b class="n">02</b>
+      <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2.5 12h19"/><rect x="5" y="9.4" width="3.2" height="5.2" rx=".6"/><rect x="10.4" y="9.4" width="3.2" height="5.2" rx=".6"/><rect x="15.8" y="9.4" width="3.2" height="5.2" rx=".6"/></svg>
+      <h3>التقويم المعدني</h3><p>حمّالات ثابتة وسلك يُضبط في كل زيارة شهرية، وهو الأقدر على الازدحام الشديد وتصحيح العضة المعكوسة والعضة العميقة.</p></div>
+    <div class="cell"><b class="n">03</b>
+      <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 4.2c-2.4 0-4.3 1.6-4.3 4 0 2 .8 3.3 1.3 5.4.3 1.4.4 3.2 1.3 3.2.8 0 .9-1.5 1.1-2.8.2-.9.3-1.4.6-1.4s.4.5.6 1.4c.2 1.3.3 2.8 1.1 2.8.9 0 1-1.8 1.3-3.2.5-2.1 1.3-3.4 1.3-5.4 0-2.4-1.9-4-4.3-4z"/><path d="M19 19.5h2M17.5 21v-3"/></svg>
+      <h3>تقويم الأطفال</h3><p>متابعة نمو الفكين في مرحلة الأسنان المختلطة، وأجهزة وظيفية أو موسّع حنك عند الحاجة لتقليل الازدحام قبل بزوغ الأسنان الدائمة.</p></div>
+  </div>
+</div></section>
+
+<section id="plan" class="band pad"><div class="w">
+  <p class="eye">المسار</p>
+  <h2>من القياس إلى الثبات</h2>
+  <div class="grid">
+    <div class="cell"><b class="n">الزيارة الأولى</b><h3>القياس</h3><p>صور ومسح رقمي وأشعة بانورامية وسيفالومترية وقياس الإطباق — قاعدة كل قرار بعدها.</p></div>
+    <div class="cell"><b class="n">قبل البدء</b><h3>المسار المكتوب</h3><p>نوع التقويم، عدد الزيارات، المدة المتوقّعة، والتكلفة الكاملة بلا إضافات لاحقة.</p></div>
+    <div class="cell"><b class="n">بعد الانتهاء</b><h3>المثبّت</h3><p>مثبّت ثابت خلف الأسنان أو متحرك ليلي، ومراجعات دورية — لأن الأسنان تميل للعودة لموضعها الأول بلا تثبيت.</p></div>
+  </div>
+  <div class="notes">
+    <span>منشأة مرخّصة — رقم الترخيص: يُضاف من العيادة</span>
+    <span>التأمينات المقبولة: تُحدَّد مع العيادة</span>
+  </div>
+</div></section>
+
+<section id="ct" class="pad"><div class="w">
+  <p class="eye">الحجز</p>
+  <h2>احجز استشارة القياس</h2>
+  <div class="two">
+    <div>
+      <div class="row"><small>رقم العيادة</small><b class="num" dir="ltr">+966 12 680 0009</b></div>
+      <div class="row"><small>العنوان</small><b>شارع باخشب، جدة</b></div>
+      <div class="row"><small>التقييم</small><b><span class="num">4.4</span> من <span class="num">109</span> مراجعة على خرائط Google</b></div>
+      <div class="row" style="border:0"><small>الخريطة</small><b><a href="https://www.google.com/maps/search/?api=1&amp;query=%D8%B9%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9%20%D9%84%D8%B7%D8%A8%20%D9%88%D8%AA%D9%82%D9%88%D9%8A%D9%85%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86%20%D8%AC%D8%AF%D8%A9" target="_blank" rel="noopener" style="color:var(--pine)">افتح الموقع على الخريطة</a></b></div>
+    </div>
+    <form id="bk">
+      <label for="n1">الاسم</label><input id="n1" name="name" required autocomplete="name" placeholder="اكتب اسمك">
+      <label for="n2">رقم الجوال</label><input id="n2" name="tel" type="tel" required inputmode="tel" autocomplete="tel" pattern="0[0-9]{9}" placeholder="05xxxxxxxx">
+      <label for="n3">نوع الاستشارة</label>
+      <select id="n3"><option>استشارة قياس وتصنيف عضة</option><option>التقويم الشفاف</option><option>التقويم المعدني</option><option>تقويم الأطفال والأجهزة الوظيفية</option><option>متابعة مثبّت</option></select>
+      <button type="submit">أرسل الطلب على واتساب</button>
+      <p class="fb" id="fb" role="status" aria-live="polite">فتحنا واتساب لإرسال طلبك — أكمل الإرسال من هناك. إذا لم يُفتح، اتصل مباشرة بالرقم أعلاه.</p>
+    </form>
+  </div>
+</div></section>
+
+<footer class="pad"><div class="w">
+  <div>تصميم وتنفيذ: <b>رامي الشيخي</b> · <span dir="ltr" style="unicode-bidi:plaintext">+966 54 054 2928</span> — هذا النموذج أُعدّ خصيصاً لـعيادات الأسنان الدولية لطب وتقويم الأسنان</div>
+  <a class="ask" href="https://wa.me/966540542928" target="_blank" rel="noopener">اطلب نسختك الرسمية</a>
+</div></footer>
+
+<div class="sticky">
+  <a class="p" href="tel:+966126800009">اتصال</a>
+  <a href="#ct">حجز</a><a href="#svc">التقويم</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+<script>
+document.getElementById('bk').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t='السلام عليكم، أرغب بحجز استشارة\nالاسم: '+document.getElementById('n1').value
+      +'\nالجوال: '+document.getElementById('n2').value
+      +'\nالنوع: '+document.getElementById('n3').value;
+  location.href='tel:+966126800009';
+  document.getElementById('fb').classList.add('on');
+});
+(function(){
+  var cv=document.getElementById('cv');
+  if(!window.THREE||!cv){return}
+  try{
+    var W=cv.clientWidth||400,H=cv.clientHeight||400;
+    var rn=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+    rn.setPixelRatio(Math.min(devicePixelRatio,2));rn.setSize(W,H,false);
+    rn.toneMapping=THREE.ACESFilmicToneMapping;rn.toneMappingExposure=1.0;
+    var sc=new THREE.Scene();
+    var cam=new THREE.PerspectiveCamera(30,W/H,.1,60);cam.position.set(0,2.6,5.2);cam.lookAt(0,0,0);
+
+    var ec=document.createElement('canvas');ec.width=512;ec.height=256;
+    var x=ec.getContext('2d');
+    x.fillStyle='#cdd3d0';x.fillRect(0,0,512,256);
+    for(var s=0;s<9;s++){
+      x.fillStyle=s%2?'#ffffff':'#8d9894';
+      x.fillRect(0,s*28,512,s%2?20:8);
+    }
+    x.fillStyle='rgba(62,92,80,.5)';x.fillRect(0,214,512,42);
+    var tex=new THREE.CanvasTexture(ec);tex.mapping=THREE.EquirectangularReflectionMapping;
+    var pm=new THREE.PMREMGenerator(rn);sc.environment=pm.fromEquirectangular(tex).texture;
+    tex.dispose();pm.dispose();
+    sc.add(new THREE.HemisphereLight(0xffffff,0x5a6460,.35));
+    var dl=new THREE.DirectionalLight(0xffffff,1.0);dl.position.set(1.8,4.2,3.2);sc.add(dl);
+
+    var pts=[],K=9;
+    for(var i=0;i<K;i++){
+      var t=i/(K-1),a=(-1+t*2)*1.08;
+      pts.push(new THREE.Vector3(Math.sin(a)*2.05,0,Math.cos(a)*1.55-.9));
+    }
+    var curve=new THREE.CatmullRomCurve3(pts);
+    var metal=new THREE.MeshPhysicalMaterial({color:0xDFE4E8,metalness:1,roughness:.24});
+    var g=new THREE.Group();
+    g.add(new THREE.Mesh(new THREE.TubeGeometry(curve,170,.034,14,false),metal));
+    var bg=new THREE.BoxGeometry(.17,.145,.09),bs=[];
+    for(var j=0;j<9;j++){
+      var u=.055+ (j/8)*.89;
+      var p=curve.getPointAt(u),tn=curve.getTangentAt(u);
+      var b=new THREE.Mesh(bg,metal);
+      b.position.copy(p);
+      b.quaternion.setFromUnitVectors(new THREE.Vector3(1,0,0),tn.clone().normalize());
+      b.scale.setScalar(.001);bs.push(b);g.add(b);
+    }
+    sc.add(g);
+
+    var sh=document.createElement('canvas');sh.width=sh.height=128;
+    var sx=sh.getContext('2d');
+    var rg=sx.createRadialGradient(64,64,6,64,64,62);
+    rg.addColorStop(0,'rgba(17,22,26,.34)');rg.addColorStop(1,'rgba(17,22,26,0)');
+    sx.fillStyle=rg;sx.fillRect(0,0,128,128);
+    var sm=new THREE.Mesh(new THREE.CircleGeometry(2.4,56),
+      new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(sh),transparent:true,opacity:.7}));
+    sm.rotation.x=-Math.PI/2;sm.position.y=-.5;sc.add(sm);
+
+    addEventListener('resize',function(){
+      var w=cv.clientWidth,h=cv.clientHeight;if(!w)return;
+      cam.aspect=w/h;cam.updateProjectionMatrix();rn.setSize(w,h,false);
+    });
+    var tgt=0,cur=0,t0=performance.now(),vis=true;
+    var still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+    addEventListener('pointermove',function(e){tgt=((e.clientX/innerWidth)-.5)*-.34},{passive:true});
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(en){vis=en[0].isIntersecting}).observe(cv);
+    }
+    function frame(){
+      var el=performance.now()-t0;
+      for(var k=0;k<bs.length;k++){
+        var d=Math.min(1,Math.max(0,(el-320-k*70)/380));
+        bs[k].scale.setScalar(still?1:d*d*(3-2*d));
+      }
+      cur+=(tgt-cur)*.06;g.rotation.y=cur;
+      rn.render(sc,cam);
+      if(!still||el<2600)requestAnimationFrame(function(){vis?frame():setTimeout(frame,260)});
+    }
+    frame();
+  }catch(e){}
+})();
+
+/* staggered reveal: JS adds the hidden class, so a JS failure leaves the page fully visible */
+(function(){
+  var red=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(red||!('IntersectionObserver' in window))return;
+  var els=[].slice.call(document.querySelectorAll('section .card, section .cell, section .steps > div, section .spec, section .notes, section .trust'));
+  if(!els.length)return;
+  els.forEach(function(el){el.classList.add('rv','pre')});
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var sibs=[].slice.call(e.target.parentNode.children).filter(function(n){return n.classList.contains('pre')});
+      var i=Math.max(0,sibs.indexOf(e.target));
+      setTimeout(function(){e.target.classList.remove('pre')},i*55);
+      io.unobserve(e.target);
+    });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body></html>
